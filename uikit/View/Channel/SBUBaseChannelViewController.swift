@@ -102,10 +102,10 @@ open class SBUBaseChannelViewController: SBUBaseViewController {
         super.init(nibName: nil, bundle: nil)
         SBULog.info("")
         
+        self.customizedMessageListParams = messageListParams
+
         self.baseChannel = baseChannel
         self.channelUrl = baseChannel.channelUrl
-
-        self.customizedMessageListParams = messageListParams
     }
     
     /// If you don't have channel object and have channelUrl, use this initialize function. And, if you have own message list params, please set it. If not set, it is used as the default value.
